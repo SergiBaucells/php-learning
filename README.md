@@ -36,3 +36,4 @@
 * ul>li*5 (Per fer una llista)
 * foreach ($tasks as $task) ((Primer $tasks es la variable que volem utilitzar i el segon la que utilitzarem dintre el for))
 * new PDO('mysql:host=127.0.0.1;dbname=php_learning','debian-sys-maint','DOd3NQfVnIUYBb0e'); (Conexió a una BD)
+* Prova
