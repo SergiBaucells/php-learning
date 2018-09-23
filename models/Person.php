@@ -23,7 +23,8 @@ class Person
 
     public static function all()
     {
-        $pdo = Connections::connect();
+        $config = require 'framework/config.php';
+        $pdo = Connections::connect($config['database']);
         return QueryBuilder::fetchAll($pdo,'people');
     }
 

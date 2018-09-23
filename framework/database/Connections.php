@@ -1,7 +1,6 @@
 <?php
 
 class Connections{
-
     public static function connect($config)
     {
         try{
@@ -15,5 +14,4 @@ class Connections{
             die('Could not connected: ' . $e);
         }
     }
-
 }

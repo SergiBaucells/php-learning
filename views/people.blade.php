@@ -9,13 +9,15 @@
 </head>
 <body>
 
-<ul>
-    <?php foreach ($people as $person) : ?>
-    <li>
-        <?= $person->nom; ?> | <?= $person->dni;?> | <?= $person->dataNaix;?>
-    </li>
-    <?php endforeach;?>
-</ul>
+    <ul>
+        <?php foreach ($people as $person) : ?>
+        <li>
+            Nom: <?= $person->nom; ?><br>
+            DNI: <?= $person->dni;?><br>
+            Data Naixement: <?= $person->dataNaix;?>
+        </li>
+        <?php endforeach;?>
+    </ul>
 
 
 </body>

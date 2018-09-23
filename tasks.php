@@ -1,7 +1,7 @@
 <?php
 
-require 'framework/bootstrap.php';
 require 'models/Task.php';
+require 'framework/bootstrap.php';
 
 $tasks = Task::all();
 

@@ -25,7 +25,6 @@ class Task
     }
 
     public static function all()
-
     {
         $config = require 'framework/config.php';
         $pdo = Connections::connect($config['database']);
