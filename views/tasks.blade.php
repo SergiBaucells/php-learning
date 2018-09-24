@@ -9,6 +9,26 @@
 </head>
 <body>
 
+    <!--NO HTML5
+    <ul>
+        <li><a href="/tasks.php">Tasques</a></li>
+        <li><a href="/people.php">Persones</a></li>
+        <li><a href="/lessons.php">Lliçons</a></li>
+        <li><a href="/contact.php">Contacte</a></li>
+        <li><a href="/about.php">Sobre nosaltres</a></li>
+    </ul>-->
+
+    <!--HTML5 SEMÀNTICA-->
+    <nav>
+        <ul>
+            <li><a href="/tasks.php">Tasques</a></li>
+            <li><a href="/people.php">Persones</a></li>
+            <li><a href="/lessons.php">Lliçons</a></li>
+            <li><a href="/contact.php">Contacte</a></li>
+            <li><a href="/about.php">Sobre nosaltres</a></li>
+        </ul>
+    </nav>
+
     <h1>Tasks</h1>
     <p>Les meves tasques pendents són:</p>
     <hr>

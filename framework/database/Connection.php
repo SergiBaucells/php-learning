@@ -1,8 +1,9 @@
 <?php
 
-class Connections{
+class Connection{
     public static function connect($config)
     {
+        // $config
         try{
             return new PDO(
                 $config['connection'].';dbname='.$config['name'],
