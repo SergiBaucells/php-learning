@@ -14,7 +14,7 @@ function direct($uri){
         '/about'=>'controllers/about.php',
         '/contact'=>'controllers/contact.php',
     ];
-    //Route::define('tasks', ontrollers/tasks.php');
+    //Route::define('tasks', controllers/tasks.php');
     if (array_key_exists($uri,$routes)){
         return $routes[$uri];
     }else{

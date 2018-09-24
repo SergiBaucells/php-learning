@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sergi
- * Date: 24/09/18
- * Time: 21:22
- */
+
+$lessons = Lesson::all();
+
+require '../views/lessons.blade.php';

@@ -43,6 +43,4 @@
 * Controlador (Ajuntar model en la vista)
 
 # Tasques per fer
-* El mateix que tasks pero amb lessons i people
 * Poder accedir a la variable $config desde la classe Connection
-* Netejar altres clases, com la tasks

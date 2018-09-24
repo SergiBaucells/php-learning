@@ -1,23 +1,18 @@
 <?php
 
-class Person
+class Lesson
 {
-    // Definir propietat
+    // PROPIETATS
     public $name;
-    public $dni;
-    public $date;
+
 
     /**
-     * Task constructor.
+     * Lesson constructor.
      * @param $name
-     * @param $dni
-     * @param $date
      */
-    public function __construct($name, $dni, $date)
+    public function __construct($name = '')
     {
         $this->name = $name;
-        $this->dni = $dni;
-        $this->date = $date;
     }
 
     public static function all()
@@ -25,7 +20,6 @@ class Person
 //        $config = require 'framework/config.php';
 //        $pdo = Connection::connect($config['database']);
         $pdo = Connection::connect();
-        return QueryBuilder::fetchAll($pdo,'people');
+        return QueryBuilder::fetchAll($pdo,'lessons');
     }
-
 }

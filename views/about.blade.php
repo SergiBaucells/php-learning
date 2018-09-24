@@ -8,6 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-<h1>About</h1>
+
+<nav>
+    <ul>
+        <li><a href="/controllers/tasks.php">Tasques</a></li>
+        <li><a href="/controllers/people.php">Persones</a></li>
+        <li><a href="/controllers/lessons.php">Lliçons</a></li>
+        <li><a href="/controllers/contact.php">Contacte</a></li>
+        <li><a href="/controllers/about.php">Sobre nosaltres</a></li>
+    </ul>
+</nav>
+<h1>ABOUT</h1>
 </body>
 </html>

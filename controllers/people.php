@@ -2,4 +2,4 @@
 
 $people = Person::all();
 
-require 'views/people.blade.php';
+require '../views/people.blade.php';
