@@ -1,5 +1,20 @@
 {
+    "name": "sergi/php-learning",
+    "authors": [
+        {
+            "name": "SergiBaucells",
+            "email": "sergibaucells@iesebre.com"
+        }
+    ],
     "require": {
         "phpunit/phpunit": "^7.3"
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ],
+        "files": [
+            "./helpers.php"
+        ]
     }
 }

@@ -26,7 +26,7 @@ class Task
 
     public static function all()
     {
-        $config = require 'config/config.php';
+        $config = require 'config.php';
         $pdo = Connection::connect($config['database']);
         return QueryBuilder::fetchAll($pdo,'Tasks');
     }

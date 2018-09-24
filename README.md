@@ -36,7 +36,13 @@
 * ul>li*5 (Per fer una llista)
 * foreach ($tasks as $task) ((Primer $tasks es la variable que volem utilitzar i el segon la que utilitzarem dintre el for))
 * new PDO('mysql:host=127.0.0.1;dbname=php_learning','debian-sys-maint','DOd3NQfVnIUYBb0e'); (Conexió a una BD)
+* FC -> Font Controller -> Un sol fitxer PHP (index.php) executa tota la app, sempre s'executa primer
+* URI (Una part de la URL)
+* composer dump-autoload (actualitza)
+* require 'vendor/autoload.php'; (dins hi han tots els requires)
+* Controlador (Ajuntar model en la vista)
 
 # Tasques per fer
 * El mateix que tasks pero amb lessons i people
 * Poder accedir a la variable $config desde la classe Connection
+* Netejar altres clases, com la tasks

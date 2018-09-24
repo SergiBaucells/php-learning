@@ -1,25 +1,11 @@
 <?php
 
-//var_dump($_GET);
-//die();
+require 'vendor/autoload.php';
+require 'framework/bootstrap.php';
 
-//Array
-//$platan = 'platan';
-//$presec = 'prèsec';
-//$taronja = 'taronja';
-//$fruites = [$platan, $str, $taronja];
-//echo $fruites[0];
-//die();
 
-// Array associatiu
-//$person = [
-//        'name' => 'Sergi Baucells',
-//        'dni' => '47475729Z',
-//        'mobile' => '645898261'
-//];
+require direct($_SERVER['REQUEST_URI']);
+//require Router::direct($_SERVER['REQUEST_URI']);
 
-require 'functions.php';
 
-$greeting = hello($_GET['greeting']);
 
-require 'views/index.blade.php';
