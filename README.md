@@ -45,6 +45,9 @@
 * MVC (Model Vista Controlador)
 * git rm --cached config.php (Per eliminar un fitxer del github pero NO del repositori local)
 * self:: (Per accedir als paràmetres que estan en static)
+* Ctrl + Alt + L (Organitzar tabulacions del codi)
+* 
 
 # Tasques per fer
 * Poder accedir a la variable $config desde la classe Connection
+* Crear carpeta app, tot el que no sigui framework (contoladors, models i vistes)

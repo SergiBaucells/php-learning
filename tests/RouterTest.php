@@ -28,18 +28,6 @@ class RouterTest extends TestCase
     /**
      * @test
      */
-    public function check_returns_exception_when_uri_is_wrong()
-    {
-        try {
-            Router::direct('/uri_inventada_que_no_existeix');
-        } catch (Exception $e) {
-            $this->assertEquals("La pàgina que demaneu no existeix",$e->getMessage());
-        }
-    }
-
-    /**
-     * @test
-     */
     public function check_returns_exception_when_uri_not_exists()
     {
         try {
