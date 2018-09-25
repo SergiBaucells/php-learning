@@ -41,6 +41,9 @@
 * composer dump-autoload (actualitza)
 * require 'vendor/autoload.php'; (dins hi han tots els requires)
 * Controlador (Ajuntar model en la vista)
+* :: (Per evitar tenir que fer un $router = new Router())
+* MVC (Model Vista Controlador)
+* 
 
 # Tasques per fer
 * Poder accedir a la variable $config desde la classe Connection
