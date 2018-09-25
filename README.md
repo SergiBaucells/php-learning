@@ -43,7 +43,8 @@
 * Controlador (Ajuntar model en la vista)
 * :: (Per evitar tenir que fer un $router = new Router())
 * MVC (Model Vista Controlador)
-* 
+* git rm --cached config.php (Per eliminar un fitxer del github pero NO del repositori local)
+* self:: (Per accedir als paràmetres que estan en static)
 
 # Tasques per fer
 * Poder accedir a la variable $config desde la classe Connection
