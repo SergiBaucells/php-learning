@@ -8,7 +8,7 @@
 * Shift + F10 (Executar última funció)
 * php -S localhost:8000 (Servidor PHP per fer coses bàsiques)
 * Funcions predefinides, venen de serie amb PHP
-* Xivatos: echo, dd, dump, Laravel dump server, logs, Laravel DebugBar, var_dump, <pre>
+* Xivatos: echo, dd, dump, Laravel dump server, logs, Laravel DebugBar, var_dump
 * WISHFUL THINKING | WISHFUL PROGRAMMING -> Programar sobre el que jo vull
 * File - Settings - phpunit - Test Frameworks (Per fer funcionar els tests)
 * Ctrl + Shift + F10 (Executar tots els tests, sobre de la classe)

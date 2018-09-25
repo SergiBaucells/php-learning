@@ -2,4 +2,4 @@
 
 $lessons = Lesson::all();
 
-require '../views/lessons.blade.php';
+require view('lessons');
