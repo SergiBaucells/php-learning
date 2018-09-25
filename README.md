@@ -50,4 +50,3 @@
 
 # Tasques per fer
 * Poder accedir a la variable $config desde la classe Connection
-* Crear carpeta app, tot el que no sigui framework (contoladors, models i vistes)

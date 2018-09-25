@@ -1,10 +1,10 @@
 <?php
 
 return $routes = [
-    '/' => 'controllers/tasks.php',
-    '/tasks' => 'controllers/tasks.php',
-    '/people' => 'controllers/people.php',
-    '/lessons' => 'controllers/lessons.php',
-    '/about' => 'controllers/about.php',
-    '/contact' => 'controllers/contact.php'
+    '/' => 'app/controllers/tasks.php',
+    '/tasks' => 'app/controllers/tasks.php',
+    '/people' => 'app/controllers/people.php',
+    '/lessons' => 'app/controllers/lessons.php',
+    '/about' => 'app/controllers/about.php',
+    '/contact' => 'app/controllers/contact.php'
 ];

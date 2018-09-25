@@ -2,6 +2,6 @@
 
 if(!function_exists('view')){
     function view($view){
-        return "views/$view.blade.php";
+        return "app/views/$view.blade.php";
     }
 }

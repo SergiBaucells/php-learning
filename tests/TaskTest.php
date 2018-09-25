@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-require_once ('../models/Task.php');
+require_once('../models/Task.php');
 
 class TaskTest extends TestCase
 {
