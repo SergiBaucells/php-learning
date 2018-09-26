@@ -1,20 +1,14 @@
 <?php
 
-class Connection{
+class Connection
+{
     public static function connect()
     {
-//        try{
-//            return new PDO(
-//                $config['connection'].';dbname='.$config['name'],
-//                $config['username'],
-//                $config['password'],
-//                $config['options']
-//            );
-//        }catch(PDOException $e){
-//            die('Could not connected: ' . $e);
-//        }
+        $database = config('database');
+
         try {
-            return new PDO('mysql:host=127.0.0.1;dbname=php_learning','debian-sys-maint','DOd3NQfVnIUYBb0e');
+//            return new PDO('mysql:host=127.0.0.1;dbname=php_learning','debian-sys-maint','DOd3NQfVnIUYBb0e');
+            return new PDO($database['type'] . ':host=' . $database['host'] . ';dbname=' . $database['name'], $database['user'], $database['password']);
         } catch (\PDOException $e) {
             die('Could not connect: ' . $e);
         }

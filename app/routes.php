@@ -1,6 +1,6 @@
 <?php
 
-return $routes = [
+return [
     '/' => 'app/controllers/tasks.php',
     '/tasks' => 'app/controllers/tasks.php',
     '/people' => 'app/controllers/people.php',

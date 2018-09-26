@@ -14,7 +14,7 @@
             "./"
         ],
         "files": [
-            "./helpers.php"
+            "./app/helpers.php"
         ]
     }
 }

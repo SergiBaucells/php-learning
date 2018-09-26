@@ -2,8 +2,9 @@
 
 require 'database/Connection.php';
 require 'database/QueryBuilder.php';
-require 'config.php';
 
-$routes =require 'routes.php';
+App::bind('config', require 'config.php');
+
+$routes = require 'app/routes.php';
 
 Router::define($routes);
