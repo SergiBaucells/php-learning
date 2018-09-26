@@ -22,4 +22,10 @@ class Router
         if (array_key_exists($uri,self::$routes)) return self::$routes[$uri];
         throw new Exception('La pàgina que demaneu no existeix');
     }
+
+    public static function execute($controller,$method)
+    {
+        $controller = new $controller;
+        $controller->$method;
+    }
 }

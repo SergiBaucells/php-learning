@@ -48,7 +48,7 @@
 * Ctrl + Alt + L (Organitzar tabulacions del codi)
 * App::bind()->set
 * APP::resolve->get
-
+* CRUD (Create Retrieve Update Delete)
 
 # Tasques per fer
 * Poder accedir a la variable $config desde la classe Connection

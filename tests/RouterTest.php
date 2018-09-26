@@ -10,7 +10,7 @@ class RouterTest extends TestCase
     public function check_returns_tasks_when_uri_is_null()
     {
         $path = Router::direct();
-        $this->assertEquals($path,'controllers/tasks.php');
+        $this->assertEquals($path,'app/controllers/tasks.php');
     }
 
     /**
