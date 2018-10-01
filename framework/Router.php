@@ -14,18 +14,30 @@ class Router
         self::$routes=$routes;
     }
 
-    public static function direct($uri = null)
-    {
-        if (!$uri) return 'app/controllers/tasks.php';
-
-        //      NO ESTATIC  $this->routes; STATIC self::$routes
-        if (array_key_exists($uri,self::$routes)) return self::$routes[$uri];
-        throw new Exception('La pàgina que demaneu no existeix');
-    }
-
     public static function execute($controller,$method)
     {
         $controller = new $controller;
         $controller->$method;
     }
+
+    public static function direct($uri, $requestType)
+    {
+        if (array_key_exists($uri, self::$routes[$requestType])) {
+            return self::callAction(
+                ...explode('@', self::$routes[$requestType][$uri]['controller'])
+            );
+        }
+        throw new Exception('Ruta no definida per a esta URI.');
+    }
+
+    protected static function callAction($controller, $action)
+    {
+        if (! method_exists($controller, $action)){
+            throw new Exception(
+                "El {$controller} no respon a l'acció {$action}"
+            );
+        }
+        return (new $controller)->$action();
+    }
+
 }
