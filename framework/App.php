@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Framework;
+
 class App
 {
     private static $registry = [];

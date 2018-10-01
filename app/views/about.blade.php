@@ -13,7 +13,7 @@
 </v-card-title>
 
 <v-card-actions>
-    <v-btn flat color="blue"><a href="https://github.com/SergiBaucells" style='text-decoration:none'>Explore</a></v-btn>
+    <v-btn flat color="blue"><a href="https://github.com/SergiBaucells" style='text-decoration:none'>GitHub</a></v-btn>
 </v-card-actions>
 <?php require 'partials/footer.blade.php'?>
 
