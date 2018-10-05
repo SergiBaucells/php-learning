@@ -33,7 +33,7 @@
         <?php endforeach;?>
 
         <form method="POST" action="/tasks">
-            <input name="name" type="text" placeholder="Nova tasca">
+            <input name="name" type="text" placeholder="Nova tasca" required>
             <button type="submit">Afegir</button>
         </form>
 

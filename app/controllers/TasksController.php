@@ -22,7 +22,7 @@ class TasksController
         //]);
 
         QueryBuilder::insert('Tasks', [
-            'name' => $_POST['name']
+            'name' => "'".$_POST['name']."'"
         ]);
 
         return redirect('tasks');

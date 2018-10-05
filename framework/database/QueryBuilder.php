@@ -20,13 +20,11 @@ class QueryBuilder
     public static function insert($table, $parameters)
     {
         $connection = Connection::connect();
-        $sql = sprintf('insert into %s (%s) values (%s)', $table, implode(', ', array_keys($parameters)), ':'.implode(', :', array_keys($parameters)));
-        //var_dump($sql);
+        $sql = sprintf('insert into %s (%s) values (%s)', $table, implode(', ', array_keys($parameters)), implode(',', array_values($parameters)));
         try {
             $statement = $connection->prepare($sql);
             $statement->execute($parameters);
-            //die(var_dump($parameters));
-        } catch (Exception $e) {
+            } catch (Exception $e) {
             //
         }
     }
