@@ -2,15 +2,11 @@
 
 <v-card>
     <v-toolbar color="cyan" dark>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
 
         <v-toolbar-title>Tasques</v-toolbar-title>
 
         <v-spacer></v-spacer>
 
-        <v-btn icon>
-            <v-icon>search</v-icon>
-        </v-btn>
     </v-toolbar>
 
     <v-list two-line>
@@ -36,7 +32,13 @@
         </v-list-tile>
         <?php endforeach;?>
 
+        <form method="POST" action="/tasks">
+            <input name="name" type="text" placeholder="Nova tasca">
+            <button type="submit">Afegir</button>
+        </form>
+
     </v-list>
+
 </v-card>
 
 <?php require 'partials/footer.blade.php' ?>

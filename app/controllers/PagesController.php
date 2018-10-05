@@ -8,11 +8,9 @@ use App\Models\Task;
 
 class PagesController
 {
-
     public function tasks()
     {
         $tasks = Task::all();
-
         require view('tasks');
     }
 
@@ -38,7 +36,4 @@ class PagesController
     {
         require view('about');
     }
-
-
-
 }

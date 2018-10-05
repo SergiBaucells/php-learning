@@ -6,7 +6,7 @@ return [
             'controller' => 'PagesController@tasks',
         ],
         '/tasks' => [
-            'controller' => 'PagesController@tasks',
+            'controller' => 'TasksController@index',
         ],
         '/people' => [
             'controller' => 'PagesController@people',
@@ -23,7 +23,7 @@ return [
     ],
     'POST' => [
         '/tasks' => [
-            'controller' => 'PagesController@store',
+            'controller' => 'TasksController@store',
         ]
     ]
 ];
